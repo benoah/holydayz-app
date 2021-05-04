@@ -3,17 +3,19 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Col } from "react-bootstrap";
+import Search from "../search/Search"
+
 
 //import Button from "react-bootstrap/Button";
 // import Dropdown from "react-bootstrap/Dropdown";
 // import DropdownButton from "react-bootstrap/"
 const url = "http://localhost:1337/banners";
 
+
 export default function Banner() {
   const [banners, setBanners] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
 
   useEffect(function () {
     async function fetchData() {
@@ -45,8 +47,9 @@ export default function Banner() {
         return (
 
           <div className="CarouselContainer" key={banner.id}>
-            <Carousel className="container">
-              <Carousel.Item className="Carousel__innercontainer">
+              <Container>
+              <Carousel className="container">
+              <Carousel.Item className="Carousel__innercontainer ">
                 <img
                   className="d-block w-100 Carousel__innercontainerimage"
                   src={banner.img_third}
@@ -57,7 +60,7 @@ export default function Banner() {
                   <h1 className="Carousel__innercontainerheadername">
                     CINQ SUITS
                   </h1>
-                  <p className="Carousel__innercontainerdescription">
+                  <p className="Carousel__innercontainerdescription underline--magical ">
                     Bienvenue à l’Hôtel Particulier Montmartre, le plus privé et
                     le plus petit des hôtels bergen
                   </p>
@@ -77,7 +80,7 @@ export default function Banner() {
                 <Carousel.Caption className="Carousel__innercontainertext">
                   <h3 className="Carousel__innercontainerheader">Hotel</h3>
                   <h1 className="Carousel__innercontainerheadername">BQ LUX</h1>
-                  <p className="Carousel__innercontainerdescription">
+                  <p className="Carousel__innercontainerdescription underline--magical ">
                     Bienvenue à l’Hôtel Particulier Montmartre, le plus privé et
                     le plus petit des hôtels bergen
                   </p>
@@ -98,7 +101,7 @@ export default function Banner() {
                 <Carousel.Caption className="Carousel__innercontainertext">
                   <h3 className="Carousel__innercontainerheader">Hotel</h3>
                   <h1 className="Carousel__innercontainerheadername">FJORDEN</h1>
-                  <p className="Carousel__innercontainerdescription">
+                  <p className="Carousel__innercontainerdescription underline--magical ">
                     Bienvenue à l’Hôtel Particulier Montmartre, le plus privé et
                     le plus petit des hôtels bergen
                   </p>
@@ -110,13 +113,15 @@ export default function Banner() {
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
+              </Container>
             <Container>
                 <Row>
                     <Col>
-                    <p className="adress-text"> 17 BERGENGATEN , 0673 BERGEN</p>
+                    <p className="container adress-text"> 17 BERGENGATEN , 0673 BERGEN</p>
                     </Col>
                 </Row>
             </Container>
+          <Search/>
          </div>
          
         );

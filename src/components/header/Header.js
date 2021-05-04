@@ -19,7 +19,7 @@ export default function Header() {
             <Row>
                 <Col>
                 <Navbar expand="lg">
-<Navbar.Brand className=" col-3  col-md-4 NavContainer_Brand NavContainer_Brand_gradient-text" href="#">Holidayz
+<Navbar.Brand className=" col  col-md-4 NavContainer_Brand NavContainer_Brand_gradient-text " href="#">Holidayz
 </Navbar.Brand>
 <Navbar.Toggle className=" navbarToogle" aria-controls="basic-navbar-nav">
 <span></span>
@@ -34,7 +34,7 @@ menu
 </FormControl>
 </Navbar.Collapse>
 <Navbar.Collapse id="basic-navbar-nav">
-<Nav className=" NavContainer_Link col col-md-4  offset-md-5"   >
+<Nav className=" NavContainer_Link col  offset-md-5"   >
 <Nav.Link className="NavContainer_Link_item" href="#">Home</Nav.Link>
 <Nav.Link className="NavContainer_Link_item" href="#">Hotels</Nav.Link>
 <Nav.Link className="NavContainer_Link_item" href="#">Contact</Nav.Link>
@@ -44,7 +44,6 @@ menu
 </Col>
 </Row>
 </Container>
-
  </div>
     )
 }
