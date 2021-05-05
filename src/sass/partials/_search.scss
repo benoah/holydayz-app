@@ -1,9 +1,9 @@
 .banner__search{
     background-color: white;
-     border-color: #592466;
+     border-color: #D2B5B1 ;
      margin: auto;
      width: 96%;
-  
+     margin-bottom: 32px;
   }
 
   .Search__SearchButton{
@@ -14,6 +14,7 @@
     color: #ffffff;
     font-weight: 700;
     background-image: linear-gradient(120deg, #D2B5B1 0%, #C4B0D1 100%);    
+  
   }
 
 .SearchHolder{
@@ -56,7 +57,7 @@ e-input-group:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-le
     color: #fff;
 }
  .Search__SearchButtonnrtwo {
-    color: #003333;
+    color: #333;
     font-weight: 700;
     margin-bottom: 16px;
     margin-top: 16px;
@@ -76,8 +77,6 @@ e-input-group:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-le
 
  @media screen and (min-width: 812px) {
     .banner__search{
-  
-         width: 98%;
-      
+         width: 98%;      
       }
  }

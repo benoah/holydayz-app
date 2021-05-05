@@ -1,6 +1,7 @@
 .CarouselContainer{
     background: #000 !important;
-    height:100vh;
+    background-size: cover;
+
 }
 
 .Carousel__innercontainerimage{
@@ -43,7 +44,11 @@
 }
 
 @media screen and (min-width: 812px) {
-    
+  .CarouselContainer{
+    background: #000 !important;
+    background-size: cover;
+}
+
     .Carousel__innercontainerimage{
         height: 640px;
         background-size: cover;
