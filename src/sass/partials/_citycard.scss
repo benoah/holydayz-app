@@ -1,0 +1,37 @@
+.CityCardContainer{
+    margin-top: 32px;
+}
+
+.CityCardContainerHolder{
+    overflow: hidden;
+    box-shadow: 0px 6px 8px -8px rgba(89, 36, 102, 1);
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+    color: #3e4555;
+
+}
+
+
+.CityCardContainerHolder:hover {
+    transform: scale(1.07);
+  }
+
+  .CityCardContainer > img {
+    object-fit: fill;
+    max-height: 320px;
+  }
+
+.card__info__title{
+    line-height: 24px;
+    color: #000333;
+  }
+
+
+.card__info__description{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #3e4555;
+}

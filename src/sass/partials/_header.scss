@@ -1,18 +1,19 @@
+.NavContainerHolderdesktop{
+  display: none;
+}
 .form-control {
-  width: 240px;
-  border-radius: 16px;
+  width: 320px;
   margin: auto;
+  margin-top: 24px;
 }
 
 .NavContainer{
   position: sticky;
   z-index: 100;
   width: 100%;
-  background: #000 !important;
+ background: #000 !important;
+
 }
-
-
-
 .underline--magical {
   background-image: linear-gradient(120deg, #D2B5B1 0%, #C4B0D1 100%);
   background-repeat: no-repeat;
@@ -23,6 +24,7 @@
     background-size: 100% 88%;
   }
 }
+
 .NavContainer_Menutext{
   font: 500;
 
@@ -86,15 +88,6 @@ font-family: 'roboto', sans-serif;
   }
 }
 
-@media screen and (min-width: 812px) {
-  .form-control {
-    width: 320px;
-    border-radius: 16px;
-}
-.NavContainer{
-height: auto;
-}
-}
 
 
 // https://codepen.io/cluzier/pen/RwWbVdZ
@@ -143,4 +136,30 @@ height: auto;
     transform: scale(1, 1) translateY(0);
   }
 }
+.desktop{
+  display: none;
+ }
 
+@media screen and (min-width: 812px) {
+  .NavContainer{
+  display: none;
+  }
+  .form-control {
+    width: 320px;
+    margin: auto;
+  }
+  
+  .desktop{
+    display: block;
+   background: #000 !important;
+   justify-content: space-between;
+  }
+  .desktop .row{
+    padding-top: 16px;
+  }
+
+  .NavbarBrand{
+    margin-left: 16px;
+  }
+
+}

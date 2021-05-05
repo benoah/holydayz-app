@@ -1,13 +1,14 @@
+
 .CarouselContainer{
     background: #000 !important;
     background-size: cover;
-
 }
 
 .Carousel__innercontainerimage{
     height: 640px;
     background-size: cover;
     filter: brightness(50%);
+    margin-top: 24px;
 }
 
 .Carousel__innercontainertext{
@@ -47,6 +48,7 @@
   .CarouselContainer{
     background: #000 !important;
     background-size: cover;
+    height: 100vh;
 }
 
     .Carousel__innercontainerimage{

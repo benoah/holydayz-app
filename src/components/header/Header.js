@@ -31,24 +31,21 @@ export default function Header() {
 //  the second state will hold a copy of the first state and then the second states value will change when 
 // we search for a word in the data. /Users/kristine/Desktop/holydayz-app/src/components/image/logo/logo.jpg
     return (
+      <>
         <div className="NavContainer">
-            <Container>
+            <Container className="NavContainerHolder">
             <Row>
                 <Col>
                 <Navbar expand="lg">
-<Navbar.Brand className="col-sm-4 col-lg-4" href="#">
+<Navbar.Brand className="NavbarBrand col-sm-4 col-lg-4" href="#">
   <div className='content-white '>Holidayz
   <div className='circ-pink'/>
-  
   </div>
-  
-
 </Navbar.Brand>
 <Navbar.Toggle className=" navbarToogle" aria-controls="basic-navbar-nav">
 <span></span>
 <span></span>
 <span></span>
-
 <p className="NavContainer_Menutext">
 menu
 </p>
@@ -68,5 +65,77 @@ menu
 </Row>
 </Container>
  </div>
+ <div className=" desktop ">
+ <Container>
+ <div className="row">
+    <div className="col-sm text-white">
+    <Navbar.Brand className="NavbarBrand" href="#">
+    <div className='content-white '>Holidayz
+    <div className='circ-pink'/>
+  </div>
+    </Navbar.Brand>
+    </div>
+    <div className="col-sm-6 text-white">
+    <TypeaheadExample className=""/>
+    </div>
+    <div className="col-sm text-white">
+     <Nav className="">
+<Nav.Link className="NavContainer_Link_item" href="#">Home</Nav.Link>
+<Nav.Link className="NavContainer_Link_item" href="#">Hotels</Nav.Link>
+<Nav.Link className="NavContainer_Link_item" href="#">Contact</Nav.Link>
+</Nav>
+    </div>
+  </div>
+   </Container>
+
+</div>
+
+
+ </>
     )
 }
+
+
+/*
+
+ <div className="desktop">
+    <Container>
+    <Navbar>
+      <Row>
+        <Col>
+        <Navbar.Brand className="NavbarBrand" href="#">
+  <div className='content-white '>Holidayz
+  <div className='circ-pink'/>
+  </div>
+</Navbar.Brand>
+        </Col>
+        <Col  >
+        <TypeaheadExample className=""/>
+        </Col>
+        <Col  className="" >
+<Nav className="">
+<Nav.Link className="NavContainer_Link_item" href="#">Home</Nav.Link>
+<Nav.Link className="NavContainer_Link_item" href="#">Hotels</Nav.Link>
+<Nav.Link className="NavContainer_Link_item" href="#">Contact</Nav.Link>
+</Nav>
+        </Col>
+      </Row>
+      </Navbar> 
+    </Container>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm text-white">
+      One of three columns
+    </div>
+    <div class="col-sm text-white">
+      One of three columns
+    </div>
+    <div class="col-sm text-white">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+ </div>
+  
+*/
