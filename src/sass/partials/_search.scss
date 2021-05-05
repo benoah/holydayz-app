@@ -1,0 +1,83 @@
+.banner__search{
+    background-color: white;
+     border-color: #592466;
+     margin: auto;
+     width: 96%;
+  
+  }
+
+  .Search__SearchButton{
+    padding: 10px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 700;
+    background-image: linear-gradient(120deg, #D2B5B1 0%, #C4B0D1 100%);    
+  }
+
+.SearchHolder{
+    padding: 16px;
+}
+.SearchHolderInner{
+    padding-top: 16px;
+}
+  .banner__search {
+    display: flex;
+    flex-direction: column;
+}
+e-input-group:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left), .e-input-group.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error) .e-input-in-wrap, .e-input-group.e-control-wrapper:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error) .e-input-in-wrap, .e-float-input.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error) .e-input-in-wrap, .e-float-input.e-control-wrapper.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error) .e-input-in-wrap {
+    border-color:#003333;
+    background: #fff;
+}
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before, .e-input-group:not(.e-float-icon-left):not(.e-float-input)::after, .e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before, .e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after, .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before, .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after, .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before, .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after {
+    background: #D2B6B1;
+}
+.e-daterangepicker.e-popup .e-calendar .e-start-date.e-selected.e-range-hover.e-today span.e-day, .e-bigger.e-small .e-daterangepicker.e-popup .e-calendar .e-start-date.e-selected.e-range-hover.e-today span.e-day {
+    background-color: #003333;
+    color: #fff;
+}
+.e-calendar .e-content td.e-today span.e-day, .e-calendar .e-content td.e-focused-date.e-today span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-today span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-focused-date.e-today span.e-day {
+    background: none;
+    border: 1px solid #003333;
+    border-radius: 50%;
+    color: #003333;
+}
+
+.e-btn.e-flat.e-primary, .e-css.e-btn.e-flat.e-primary {
+    background-color: transparent;
+    border-color: transparent;
+    color: #003333;
+}
+
+
+.e-daterangepicker.e-popup .e-calendar .e-end-date.e-selected.e-range-hover span.e-day, .e-daterangepicker.e-popup .e-calendar .e-start-date.e-selected.e-range-hover span.e-day, .e-bigger.e-small .e-daterangepicker.e-popup .e-calendar .e-end-date.e-selected.e-range-hover span.e-day, .e-bigger.e-small .e-daterangepicker.e-popup .e-calendar .e-start-date.e-selected.e-range-hover span.e-day {
+    background-color:  #003333;
+    color: #fff;
+}
+ .Search__SearchButtonnrtwo {
+    color: #003333;
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #D2B6B1;
+}
+.Search__SearchButtonnrtwo:hover {
+    transform: scale(1.09);
+    color: #222;
+  }
+  .SerachHolder{
+   height: 200px;
+    padding: 16px;
+}
+
+ @media screen and (min-width: 812px) {
+    .banner__search{
+  
+         width: 98%;
+      
+      }
+ }

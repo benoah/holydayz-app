@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Col } from "react-bootstrap";
-import Search from "../search/Search"
+import Button from "react-bootstrap/Button";
+import Search from "../search/Search";
+
 
 
 //import Button from "react-bootstrap/Button";
@@ -16,6 +18,7 @@ export default function Banner() {
   const [banners, setBanners] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showSearch, setShowSearch] = useState(false);
 
   useEffect(function () {
     async function fetchData() {
@@ -121,8 +124,24 @@ export default function Banner() {
                     </Col>
                 </Row>
             </Container>
-          <Search/>
+            <Container>
+                <Row>
+                    <Col className="container">
+                    <div className="banner__search ">
+                    {showSearch && <Search />} 
+            <Button   onClick={() => setShowSearch(!showSearch)} className="Search__SearchButton " variant="outline">         
+             {showSearch ? "Hide" : "Search Dates"}
+</Button>
+</div> 
+        </Col>
+
+
+                </Row>
+
+            </Container>
+
          </div>
+         
          
         );
       })}
