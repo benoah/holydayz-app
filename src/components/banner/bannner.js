@@ -59,18 +59,17 @@ export default function Banner() {
                   alt="First slide"
                 />
                 <Carousel.Caption className="Carousel__innercontainertext">
-                  <h3 className="Carousel__innercontainerheader">Hotel</h3>
+                  <h3 className="Carousel__innercontainerheader">{banner.Type}   </h3>
                   <h1 className="Carousel__innercontainerheadername">
                     CINQ SUITS
                   </h1>
                   <p className="Carousel__innercontainerdescription underline--magical ">
-                    Bienvenue à l’Hôtel Particulier Montmartre, le plus privé et
-                    le plus petit des hôtels bergen
+                  {banner.Desription} 
                   </p>
                 </Carousel.Caption>
                 <Carousel.Caption className="Carousel__innercontainerspan">
                   <h1>
-                    <span>01</span>
+                    <span> {banner.id} </span>
                   </h1>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -81,7 +80,7 @@ export default function Banner() {
                   alt="First slide"
                 />
                 <Carousel.Caption className="Carousel__innercontainertext">
-                  <h3 className="Carousel__innercontainerheader">Hotel</h3>
+                  <h3 className="Carousel__innercontainerheader">{banner.Type} </h3>
                   <h1 className="Carousel__innercontainerheadername">BQ LUX</h1>
                   <p className="Carousel__innercontainerdescription underline--magical ">
                     Bienvenue à l’Hôtel Particulier Montmartre, le plus privé et
