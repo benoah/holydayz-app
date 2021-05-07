@@ -4,13 +4,14 @@ import Banner from "../banner/bannner"
 import CardCatalogy from "../card/CardCatalogy"
 import CityCard from "../card/CityCard"
 import Contact from "../contact/Contact"
-import Login from '../login/Login'
+import Loginpage from '../login/Loginpage'
 import DetailCard from '../detailpage/DetailCard'
 
 
 export default function Home() {
     return (
         <div className="homeContainer"> 
+         <Loginpage />
            <Header />
            <Banner />
            <CardCatalogy />
@@ -18,7 +19,7 @@ export default function Home() {
            <DetailCard />
 
            <Contact />
-           <Login />
+          
         </div>
     )
 }
