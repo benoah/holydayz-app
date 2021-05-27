@@ -123,22 +123,6 @@ export default function Banner() {
                     </Col>
                 </Row>
             </Container>
-            <Container>
-                <Row>
-                    <Col className="container">
-                    <div className="banner__search ">
-                    {showSearch && <Search />} 
-            <Button   onClick={() => setShowSearch(!showSearch)} className="Search__SearchButton " variant="outline">         
-             {showSearch ? "Hide" : "Search Dates"}
-</Button>
-</div> 
-        </Col>
-
-
-                </Row>
-
-            </Container>
-
          </div>
          
          
